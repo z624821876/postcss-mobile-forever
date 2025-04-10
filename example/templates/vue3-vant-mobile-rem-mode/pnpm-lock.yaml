@@ -117,7 +117,7 @@ importers:
       mockjs:
         specifier: ^1.1.0
         version: 1.1.0
-      hack-mobile-forever:
+      chao-mobile-forever:
         specifier: file:../../..
         version: file:../../..(postcss@8.4.47)
       rollup:
@@ -3636,7 +3636,7 @@ packages:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
 
-  hack-mobile-forever@file:../../..:
+  chao-mobile-forever@file:../../..:
     resolution: {directory: ../../.., type: directory}
     peerDependencies:
       postcss: ^8.0.0
@@ -8634,7 +8634,7 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  hack-mobile-forever@file:../../..(postcss@8.4.47):
+  chao-mobile-forever@file:../../..(postcss@8.4.47):
     dependencies:
       postcss: 8.4.47
 

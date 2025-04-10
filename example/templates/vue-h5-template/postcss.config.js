@@ -8,7 +8,7 @@ const judgeComponent = (file) => {
 module.exports = {
   plugins: {
     autoprefixer: { overrideBrowserslist: ['Android 4.1', 'iOS 7.1', 'Chrome > 31', 'ff > 31', 'ie >= 8'] },
-    'hack-mobile-forever': {
+    'chao-mobile-forever': {
       viewportWidth: file => /node_modules[\\/](?:vant|@nutui|quarkd)/.test(file) ? 375 : 750, // UI设计稿的宽度
       maxDisplayWidth: 600,
       border: true,

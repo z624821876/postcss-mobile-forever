@@ -14,7 +14,7 @@ module.exports = {
       }
     ],
     [
-      "hack-mobile-forever",
+      "chao-mobile-forever",
       {
         "viewportWidth": 750,
         "maxDisplayWidth": 520,

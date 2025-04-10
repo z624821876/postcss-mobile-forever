@@ -1,7 +1,7 @@
 export default {
     plugins: {
         autoprefixer: {},
-        "hack-mobile-forever": {
+        "chao-mobile-forever": {
             rootSelector: "#app",
             viewportWidth: 375, //视窗的宽度，对应的是我们设计稿的宽度
             maxDisplayWidth: 600,

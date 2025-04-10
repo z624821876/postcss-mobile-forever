@@ -1,4 +1,4 @@
-import mobileForever from "hack-mobile-forever";
+import mobileForever from "chao-mobile-forever";
 
 export default {
   plugins: [

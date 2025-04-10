@@ -168,7 +168,7 @@ importers:
       postcss:
         specifier: ^8.4.49
         version: 8.4.49
-      hack-mobile-forever:
+      chao-mobile-forever:
         specifier: file:../../..
         version: file:../../..(postcss@8.4.49)
       postcss-nested:
@@ -4838,7 +4838,7 @@ packages:
   postcss-media-query-parser@0.2.3:
     resolution: {integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==}
 
-  hack-mobile-forever@file:../../..:
+  chao-mobile-forever@file:../../..:
     resolution: {directory: ../../.., type: directory}
     peerDependencies:
       postcss: ^8.0.0
@@ -11385,7 +11385,7 @@ snapshots:
 
   postcss-media-query-parser@0.2.3: {}
 
-  hack-mobile-forever@file:../../..(postcss@8.4.49):
+  chao-mobile-forever@file:../../..(postcss@8.4.49):
     dependencies:
       postcss: 8.4.49
 

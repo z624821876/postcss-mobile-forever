@@ -2,7 +2,7 @@
 module.exports = {
   plugins: {
     autoprefixer: {},
-    'hack-mobile-forever': {
+    'chao-mobile-forever': {
       viewportWidth: 375,
       maxDisplayWidth: 480,
       rootSelector: '#app',

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const { defaultGetLocalIdent } = require("css-loader");
-const { remakeExtractedGetLocalIdent } = require("hack-mobile-forever");
+const { remakeExtractedGetLocalIdent } = require("chao-mobile-forever");
 
 const isProdMode = process.env.NODE_ENV === "production";
 

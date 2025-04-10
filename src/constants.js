@@ -1,5 +1,5 @@
 module.exports = {
-  PLUGIN_NAME: "hack-mobile-forever",
+  PLUGIN_NAME: "chao-mobile-forever",
   width: w => ({
     prop: 'width',
     value: `${w}px`,

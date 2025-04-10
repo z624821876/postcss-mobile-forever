@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    require("hack-mobile-forever")({
+    require("chao-mobile-forever")({
       viewportWidth: 750,
       enableMediaQuery: true,
       desktopWidth: 600,

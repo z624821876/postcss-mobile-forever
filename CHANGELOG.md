@@ -32,13 +32,13 @@
 
 ### Fixed
 
-- 修复函数 viewportWidth 入参为 `undefined` 问题，[#69](https://github.com/wswmsword/hack-mobile-forever/issues/69)。
+- 修复函数 viewportWidth 入参为 `undefined` 问题，[#69](https://github.com/wswmsword/chao-mobile-forever/issues/69)。
 
 ## [4.3.1] - 2024-11-29
 
 ### Fixed
 
-- 修复 rem-mode 下 fixed 定位的元素，并且该元素和包含块宽度相关，长度没有单位时被转换成 “123” 的问题，[#62](https://github.com/wswmsword/hack-mobile-forever/issues/62)。
+- 修复 rem-mode 下 fixed 定位的元素，并且该元素和包含块宽度相关，长度没有单位时被转换成 “123” 的问题，[#62](https://github.com/wswmsword/chao-mobile-forever/issues/62)。
 
 ## [4.3.0] - 2024-11-21
 
@@ -58,7 +58,7 @@
 
 ### Fixed
 
-- 修复 At 规则下的属性不转换、导致报错问题，[#59](https://github.com/wswmsword/hack-mobile-forever/issues/59)。
+- 修复 At 规则下的属性不转换、导致报错问题，[#59](https://github.com/wswmsword/chao-mobile-forever/issues/59)。
 
 ### Changed
 
@@ -80,7 +80,7 @@
 
 ### Added
 
-- 支持 vw-mode 和 max-vw-mode 时 At 规则中的样式转换，[#51](https://github.com/wswmsword/hack-mobile-forever/issues/51)。
+- 支持 vw-mode 和 max-vw-mode 时 At 规则中的样式转换，[#51](https://github.com/wswmsword/chao-mobile-forever/issues/51)。
 
 ### Changed
 
@@ -96,25 +96,25 @@
 
 ### Fixed
 
-- 修复 `@keyframes` 不转换问题，[#44](https://github.com/wswmsword/hack-mobile-forever/issues/44)。
+- 修复 `@keyframes` 不转换问题，[#44](https://github.com/wswmsword/chao-mobile-forever/issues/44)。
 
 ## [4.1.4] - 2024-05-26
 
 ### Fixed
 
-- 打开 border 选项后，原先添加的 `100vh` 会导致移动端浏览器会出现滚动条问题，[#40](https://github.com/wswmsword/hack-mobile-forever/issues/40)。
+- 打开 border 选项后，原先添加的 `100vh` 会导致移动端浏览器会出现滚动条问题，[#40](https://github.com/wswmsword/chao-mobile-forever/issues/40)。
 
 ## [4.1.3] - 2024-04-30
 
 ### Fixed
 
-- 打开 border 选项后，使用 `box-shadow` 模拟 `border` 属性，避免在移动设备上左右两侧边框占用 2 像素宽度，[#36](https://github.com/wswmsword/hack-mobile-forever/issues/36)。
+- 打开 border 选项后，使用 `box-shadow` 模拟 `border` 属性，避免在移动设备上左右两侧边框占用 2 像素宽度，[#36](https://github.com/wswmsword/chao-mobile-forever/issues/36)。
 
 ## [4.1.2] - 2024-03-08
 
 ### Fixed
 
-- 修复不转换 CSS 函数 `var()` 回退值的问题，[#25](https://github.com/wswmsword/hack-mobile-forever/issues/25)。
+- 修复不转换 CSS 函数 `var()` 回退值的问题，[#25](https://github.com/wswmsword/chao-mobile-forever/issues/25)。
 
 ## [4.1.1] - 2024-01-10
 
@@ -133,7 +133,7 @@
 
 ### Added
 
-- 支持限制最小宽度（实验），`experimental.minDisplayWidth`，[#14](https://github.com/wswmsword/hack-mobile-forever/issues/14)、[#21](https://github.com/wswmsword/hack-mobile-forever/issues/21)。
+- 支持限制最小宽度（实验），`experimental.minDisplayWidth`，[#14](https://github.com/wswmsword/chao-mobile-forever/issues/14)、[#21](https://github.com/wswmsword/chao-mobile-forever/issues/21)。
 
 ## [4.0.0] - 2023-08-11
 
@@ -185,19 +185,19 @@
 
 ### Added
 
-- 添加选项 valueBlackList，指定的值不进行转换，例如可以指定 `["1px solid black"]`，指定之后本地和引入的仓库样式包含 `1px solid black` 的值都将不被转换，[#7](https://github.com/wswmsword/hack-mobile-forever/issues/7)。
+- 添加选项 valueBlackList，指定的值不进行转换，例如可以指定 `["1px solid black"]`，指定之后本地和引入的仓库样式包含 `1px solid black` 的值都将不被转换，[#7](https://github.com/wswmsword/chao-mobile-forever/issues/7)。
 
 ## [3.2.3] - 2023-04-18
 
 ### Fixed
 
-- 修复 viewportWidth 选项是函数的配置下，非包含块属性的值在桌面端和横屏会被转换为 `NaN` 的问题，[#6](https://github.com/wswmsword/hack-mobile-forever/issues/6)。
+- 修复 viewportWidth 选项是函数的配置下，非包含块属性的值在桌面端和横屏会被转换为 `NaN` 的问题，[#6](https://github.com/wswmsword/chao-mobile-forever/issues/6)。
 
 ## [3.2.2] - 2023-04-10
 
 ### Fixed
 
-- 修复十六进制颜色值的尾部包含数字可能被转换的问题，[#4](https://github.com/wswmsword/hack-mobile-forever/issues/4)。
+- 修复十六进制颜色值的尾部包含数字可能被转换的问题，[#4](https://github.com/wswmsword/chao-mobile-forever/issues/4)。
 
 ## [3.2.1] - 2023-03-29
 
@@ -308,7 +308,7 @@
 
 ### Changed
 
-- 项目名称使用 hack-mobile-forever 替换 postcss-mobile-to-multi-displays。
+- 项目名称使用 chao-mobile-forever 替换 postcss-mobile-to-multi-displays。
 
 ## [2.1.1] - 2023-02-24
 

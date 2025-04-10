@@ -2,7 +2,7 @@ import path from 'node:path'
 import process from 'node:process'
 import { loadEnv } from 'vite'
 import type { ConfigEnv, UserConfig } from 'vite'
-import viewport from 'hack-mobile-forever'
+import viewport from 'chao-mobile-forever'
 import autoprefixer from 'autoprefixer'
 import { createVitePlugins } from './build/vite'
 import { exclude, include } from './build/vite/optimize'
@@ -40,7 +40,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       postcss: {
         plugins: [
           autoprefixer(),
-          // https://github.com/wswmsword/hack-mobile-forever
+          // https://github.com/wswmsword/chao-mobile-forever
           viewport({
             appSelector: '#app',
             viewportWidth: 375,

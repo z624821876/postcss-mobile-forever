@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    ["hack-mobile-forever", {
+    ["chao-mobile-forever", {
       viewportWidth: 750,
       maxDisplayWidth: 600,
       appSelector: ".root-class",

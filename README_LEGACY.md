@@ -1,4 +1,4 @@
-# hack-mobile-forever
+# chao-mobile-forever
 
 <img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS" width="90" height="90" align="right">
 
@@ -13,19 +13,19 @@
 npm 安装：
 ```bash
 ## 最新的版本（postcss@^8.0.0）
-npm install --save-dev postcss hack-mobile-forever
+npm install --save-dev postcss chao-mobile-forever
 
 ## 最新的兼容版本（postcss@^6.0.0）
-npm install hack-mobile-forever@legacy --save-dev
+npm install chao-mobile-forever@legacy --save-dev
 ```
 
 yarn 安装：
 ```bash
 ## 最新的版本（postcss@^8.0.0）
-yarn add -D postcss hack-mobile-forever
+yarn add -D postcss chao-mobile-forever
 
 ## 最新的兼容版本（postcss@^6.0.0）
-yarn add -D hack-mobile-forever@legacy
+yarn add -D chao-mobile-forever@legacy
 ```
 <details>
 <summary>
@@ -35,7 +35,7 @@ yarn add -D hack-mobile-forever@legacy
 `postcss.config.js` 有好几种[配置格式](https://github.com/webpack-contrib/postcss-loader#config)，下面是其中一种配置方法：
 
 ```javascript
-import mobile from 'hack-mobile-forever' // <---- 这里
+import mobile from 'chao-mobile-forever' // <---- 这里
 import autoprefixer from 'autoprefixer'
 // 省略……
 {
@@ -227,7 +227,7 @@ npm run test
 
 ## 范例
 
-文件夹 `example` 内提供了分别在 [React](https://reactjs.org/)、[Svelte](https://svelte.dev/) 和 [Vue](https://cn.vuejs.org/) 中使用 `hack-mobile-forever` 的范例，通过命令行进入对应的范例文件夹中，即可运行：
+文件夹 `example` 内提供了分别在 [React](https://reactjs.org/)、[Svelte](https://svelte.dev/) 和 [Vue](https://cn.vuejs.org/) 中使用 `chao-mobile-forever` 的范例，通过命令行进入对应的范例文件夹中，即可运行：
 
 ```bash
 cd example/react/
@@ -387,7 +387,7 @@ rootSelector 所在元素的居中属性会被占用，如果开启了 `border`�
 - 打开选项后，样式文件会被分割为 `mobile.xxx.css`、`landscape.xxx.css` 和 `desktop.xxx.css`，这有利于使用代码分割进行产包优化;
 - 该选项需要设置 [css-loader](https://github.com/webpack-contrib/css-loader) 的 `modules.getLocalIdent` 选项，需要从本插件导入 `remakeExtractedGetLocalIdent` 函数进行传递，这是为了防止选择器名称中的哈希值出现错误（哈希值会通过文件路径计算，而被分割的文件路径是不同的）；
 - 暂时不支持热重载，可以仅在生产模式下打开该选项；
-- 被分割的文件暂时不支持运行本插件（hack-mobile-forever）后面的其它 postcss 插件；
+- 被分割的文件暂时不支持运行本插件（chao-mobile-forever）后面的其它 postcss 插件；
 - 如果使用 [HtmlWebpackPlugin](https://github.com/jantimon/html-webpack-plugin) 自动插入样式产包，需要注意顺序，顺序可以通过 `optimization.splitChunks.cacheGroups.[group].priority` 来决定，优先级越高，插入到 html 的顺序越靠前。
 
 <details>
@@ -397,7 +397,7 @@ rootSelector 所在元素的居中属性会被占用，如果开启了 `border`�
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { defaultGetLocalIdent } = require("css-loader");
-const { remakeExtractedGetLocalIdent } = require("hack-mobile-forever");
+const { remakeExtractedGetLocalIdent } = require("chao-mobile-forever");
 
 const isProdMode = process.env.NODE_ENV === "production";
 
@@ -425,7 +425,7 @@ module.exports = {
           loader: "postcss-loader",
           options: {
             postcssOptions: [
-              ["hack-mobile-forever", {
+              ["chao-mobile-forever", {
                 rootSelector: ".root-class",
                 experimental: {
                   extract: isProdMode, // 生产环境打开文件的提取

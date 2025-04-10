@@ -2,7 +2,7 @@ export default {
   plugins: {
     'autoprefixer': {},
     'postcss-nested': {},
-    'hack-mobile-forever': {
+    'chao-mobile-forever': {
       viewportWidth: 375,
       maxDisplayWidth: 600,
       border: true,

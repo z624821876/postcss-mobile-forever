@@ -1,6 +1,6 @@
 module.exports = {
   plugins: {
-    'hack-mobile-forever': {
+    'chao-mobile-forever': {
       // 根元素，用于宽屏中令视图居中于屏幕
       appSelector: "body",
       // 设计稿的视口宽度
