@@ -2,7 +2,7 @@ const isProdMode = process.env.NODE_ENV === "production";
 
 module.exports = {
   plugins: {
-    "postcss-mobile-forever": {
+    "hack-mobile-forever": {
       viewportWidth: 750,
       enableMediaQuery: true,
       desktopWidth: 600,

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   postcss: {
     plugins: {
-      "postcss-mobile-forever": {
+      "hack-mobile-forever": {
         viewportWidth: 750,
         maxDisplayWidth: 520,
         appSelector: ".app-inner-root",

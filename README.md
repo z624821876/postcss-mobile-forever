@@ -1,4 +1,4 @@
-# postcss-mobile-forever
+# hack-mobile-forever
 
 <img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS" width="90" height="90" align="right">
 
@@ -10,7 +10,7 @@
 >
 > 不同设备上的界面一致，不等于用户体验一致，使用 vw（或 rem）做移动端适配，是一种粗暴的、技术先于设计的适配方法，是一条技术捷径，请考虑站在用户的角度、利用专业知识，使用[响应式设计](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design)开发页面，使得用户在大尺寸设备上看到更丰富的内容，在小尺寸设备上看到更简洁的内容。
 
-postcss-mobile-forever 是一款 PostCSS 插件，用于将固定尺寸转为伸缩尺寸，得到一个能够等比例缩放的视图，并提供一揽子限制最大宽度的办法。mobile-forever 可以配合 [scale-view](https://github.com/wswmsword/scale-view) 使用，前者用于编译阶段，后者用于运行时。mobile-forever 有 4 种模式，适用不同的场景：
+hack-mobile-forever 是一款 PostCSS 插件，用于将固定尺寸转为伸缩尺寸，得到一个能够等比例缩放的视图，并提供一揽子限制最大宽度的办法。mobile-forever 可以配合 [scale-view](https://github.com/wswmsword/scale-view) 使用，前者用于编译阶段，后者用于运行时。mobile-forever 有 4 种模式，适用不同的场景：
 - ***vw-mode***，不限制最大宽度，跟随屏幕的宽窄变化，视图将等比放大或缩小，通过 *`px`->`vw`* 实现
 - ***mq-mode***，媒体查询 media-query 模式，**限制最大宽度**，区分桌面端与横屏两种宽度，产包较大，可访问性较优，不支持 [At 规则](https://developer.mozilla.org/zh-CN/docs/Web/CSS/At-rule)中的样式转换，通过 *`@media`* 实现
 - ***max-vw-mode***，**限制最大宽度**，不区分桌面端、横屏，达到预设宽度后即停止伸缩，产包较小，通过 *`min(vw, px)`* 实现
@@ -59,15 +59,15 @@ npm run start
 
 ## 安装和迁移
 
-npm 安装最新版本（基于 postcss@^8.0.0）（yarn 则是 `yarn add -D postcss postcss-mobile-forever`）：
+npm 安装最新版本（基于 postcss@^8.0.0）（yarn 则是 `yarn add -D postcss hack-mobile-forever`）：
 ```bash
-npm install --save-dev postcss postcss-mobile-forever
+npm install --save-dev postcss hack-mobile-forever
 ```
 
-npm 安装最新的兼容版本（基于 postcss@^6.0.0）（yarn 则是 `yarn add -D postcss-mobile-forever@legacy`）：
+npm 安装最新的兼容版本（基于 postcss@^6.0.0）（yarn 则是 `yarn add -D hack-mobile-forever@legacy`）：
 
 ```bash
-npm install postcss-mobile-forever@legacy --save-dev
+npm install hack-mobile-forever@legacy --save-dev
 ```
 
 查看[兼容版本的 mobile-forever 文档](./README_LEGACY.md)，目前兼容版本不支持[逻辑属性](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values)的处理。
@@ -80,7 +80,7 @@ npm install postcss-mobile-forever@legacy --save-dev
 `postcss.config.js` 有好几种[配置格式](https://github.com/webpack-contrib/postcss-loader#config)，下面是其中一种配置方法：
 
 ```javascript
-import mobile from 'postcss-mobile-forever' // <---- 这里
+import mobile from 'hack-mobile-forever' // <---- 这里
 import autoprefixer from 'autoprefixer'
 // 省略……
 {
@@ -316,9 +316,9 @@ npm install
 npm run test
 ```
 
-修改源码后，编写单元测试，验证是否输出了预期的结果。另外，在文件夹 `example/` 内提供了一些范例，可以用来模拟生产环境使用插件的场景，这些范例项目中依赖的 `postcss-mobile-forever` 来自源码，因此当修改源码后，可以通过在范例里 `npm i` 安装依赖，然后本地运行，通过浏览器验证自己的修改是否符合预期。
+修改源码后，编写单元测试，验证是否输出了预期的结果。另外，在文件夹 `example/` 内提供了一些范例，可以用来模拟生产环境使用插件的场景，这些范例项目中依赖的 `hack-mobile-forever` 来自源码，因此当修改源码后，可以通过在范例里 `npm i` 安装依赖，然后本地运行，通过浏览器验证自己的修改是否符合预期。
 
-如果您是移动端模版的开发者，成功引入 postcss-mobile-forever 之后，您可以按照“移动端模版和范例”一节的格式，提交 PR，将您的模版仓库以及在线演示地址添加到后续的列表中，这样可以为您的模版提供更多的曝光，也能够表示您的移动端模版具有良好的桌面端体验。
+如果您是移动端模版的开发者，成功引入 hack-mobile-forever 之后，您可以按照“移动端模版和范例”一节的格式，提交 PR，将您的模版仓库以及在线演示地址添加到后续的列表中，这样可以为您的模版提供更多的曝光，也能够表示您的移动端模版具有良好的桌面端体验。
 
 一起开发，让程序的变量命名更合适、性能和功能更好。
 
@@ -553,7 +553,7 @@ appSelector 所在元素的居中属性会被占用，包括 `margin-left`、`ma
 - 打开选项后，样式文件会被分割为 `mobile.xxx.css`、`landscape.xxx.css` 和 `desktop.xxx.css`，这有利于使用代码分割进行产包优化;
 - 该选项需要设置 [css-loader](https://github.com/webpack-contrib/css-loader) 的 `modules.getLocalIdent` 选项，需要从本插件导入 `remakeExtractedGetLocalIdent` 函数进行传递，这是为了防止选择器名称中的哈希值出现错误（哈希值会通过文件路径计算，而被分割的文件路径是不同的）；
 - 暂时不支持热重载，可以仅在生产模式下打开该选项；
-- 被分割的文件暂时不支持运行本插件（postcss-mobile-forever）后面的其它 postcss 插件；
+- 被分割的文件暂时不支持运行本插件（hack-mobile-forever）后面的其它 postcss 插件；
 - 如果使用 [HtmlWebpackPlugin](https://github.com/jantimon/html-webpack-plugin) 自动插入样式产包，需要注意顺序，顺序可以通过 `optimization.splitChunks.cacheGroups.[group].priority` 来决定，优先级越高，插入到 html 的顺序越靠前。
 
 <details>
@@ -563,7 +563,7 @@ appSelector 所在元素的居中属性会被占用，包括 `margin-left`、`ma
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { defaultGetLocalIdent } = require("css-loader");
-const { remakeExtractedGetLocalIdent } = require("postcss-mobile-forever");
+const { remakeExtractedGetLocalIdent } = require("hack-mobile-forever");
 
 const isProdMode = process.env.NODE_ENV === "production";
 
@@ -591,7 +591,7 @@ module.exports = {
           loader: "postcss-loader",
           options: {
             postcssOptions: [
-              ["postcss-mobile-forever", {
+              ["hack-mobile-forever", {
                 appSelector: ".root-class",
                 experimental: {
                   extract: isProdMode, // 生产环境打开文件的提取
@@ -757,7 +757,7 @@ module.exports = {
 - [postcss-px-to-clamp](https://github.com/wangguangyou/postcss-px-to-clamp)，postcss 插件，用于转换 px，并且限制最大和最小值。
 - [postcss-extract-media-query](https://github.com/SassNinja/postcss-extract-media-query)，postcss 插件，用于分离媒体查询。
 - [media-query-plugin](https://github.com/SassNinja/media-query-plugin)，webpack 插件，用于分离媒体查询，可以配合其它 webpack 插件使用，例如 [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)、[mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)。
-- [scale-view](https://github.com/wswmsword/scale-view)，运行时转换伸缩尺寸，可用于框架中的行内样式，查看 [#17](https://github.com/wswmsword/postcss-mobile-forever/issues/17)。
+- [scale-view](https://github.com/wswmsword/scale-view)，运行时转换伸缩尺寸，可用于框架中的行内样式，查看 [#17](https://github.com/wswmsword/hack-mobile-forever/issues/17)。
 
 相关链接：
 - [Media Queries Level 3](https://www.w3.org/TR/mediaqueries-3/#syntax)，W3C Recommendation，05 April 2022；

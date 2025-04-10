@@ -1,9 +1,9 @@
 {
-  "name": "postcss-mobile-forever",
+  "name": "hack-mobile-forever",
   "version": "5.0.0",
   "description": "PostCSS 伸缩视图转换插件。To adapt different displays by one mobile viewport.",
   "main": "index.js",
-  "types": "postcss-mobile-forever.d.ts",
+  "types": "hack-mobile-forever.d.ts",
   "scripts": {
     "test": "jest spec/mobile-forever.spec.js spec/px-to-viewport.spec.js spec/regex.spec.js",
     "test:reg": "jest spec/regex.spec.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wswmsword/postcss-mobile-forever.git"
+    "url": "git+https://github.com/z624821876/postcss-mobile-forever.git"
   },
   "keywords": [
     "css",
@@ -34,9 +34,9 @@
   "author": "wswmsword",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wswmsword/postcss-mobile-forever/issues"
+    "url": "https://github.com/wswmsword/hack-mobile-forever/issues"
   },
-  "homepage": "https://github.com/wswmsword/postcss-mobile-forever#readme",
+  "homepage": "https://github.com/wswmsword/hack-mobile-forever#readme",
   "devDependencies": {
     "jest": "^29.4.2"
   },

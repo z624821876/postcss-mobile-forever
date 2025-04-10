@@ -20,7 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
     "less": "^4.1.3",
-    "postcss-mobile-forever": "^4.2.3",
+    "hack-mobile-forever": "^4.2.3",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.1.4"
   }

@@ -62,7 +62,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 - 📱 浏览器适配 - 使用 viewport vw/vh 单位布局
 
-- 💻 [桌面端优化](https://github.com/wswmsword/postcss-mobile-forever) - 处理为移动端视图
+- 💻 [桌面端优化](https://github.com/wswmsword/hack-mobile-forever) - 处理为移动端视图
 
 - 🌓 支持深色模式
 
@@ -95,7 +95,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 - [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - vConsole 的 vite 插件
 - [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) - vite mock 开发服务（mock-dev-server）插件
-- [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - 一款 PostCSS 插件，将固定尺寸的移动端视图转为具有最大宽度的可伸缩的移动端视图
+- [hack-mobile-forever](https://github.com/wswmsword/hack-mobile-forever) - 一款 PostCSS 插件，将固定尺寸的移动端视图转为具有最大宽度的可伸缩的移动端视图
 - [vite-plugin-vue-devtools](https://github.com/vuejs/devtools-next) - 旨在增强Vue开发者体验的Vite插件
 - [vueuse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
 - [@unhead/vue](https://github.com/unjs/unhead) - 响应式地操作文档头信息

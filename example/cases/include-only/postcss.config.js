@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    ["postcss-mobile-forever", {
+    ["hack-mobile-forever", {
       viewportWidth: 750,
       enableMediaQuery: true,
       appSelector: "#root",

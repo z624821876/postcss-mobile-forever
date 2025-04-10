@@ -120,7 +120,7 @@ importers:
       mockjs:
         specifier: ^1.1.0
         version: 1.1.0
-      postcss-mobile-forever:
+      hack-mobile-forever:
         specifier: file:../../..
         version: file:../../..(postcss@8.5.1)
       rollup:
@@ -3663,7 +3663,7 @@ packages:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
     engines: {node: '>= 0.4'}
 
-  postcss-mobile-forever@file:../../..:
+  hack-mobile-forever@file:../../..:
     resolution: {directory: ../../.., type: directory}
     peerDependencies:
       postcss: ^8.0.0
@@ -8723,7 +8723,7 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-mobile-forever@file:../../..(postcss@8.5.1):
+  hack-mobile-forever@file:../../..(postcss@8.5.1):
     dependencies:
       postcss: 8.5.1
 

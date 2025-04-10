@@ -1,4 +1,4 @@
-import mobileForever from "postcss-mobile-forever";
+import mobileForever from "hack-mobile-forever";
 
 export default {
   plugins: [

@@ -14,7 +14,7 @@ module.exports = {
       }
     ],
     [
-      "postcss-mobile-forever",
+      "hack-mobile-forever",
       {
         "viewportWidth": 750,
         "maxDisplayWidth": 520,

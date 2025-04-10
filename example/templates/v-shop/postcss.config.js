@@ -2,7 +2,7 @@
 module.exports = {
   plugins: {
     autoprefixer: {},
-    'postcss-mobile-forever': {
+    'hack-mobile-forever': {
       viewportWidth: 375,
       maxDisplayWidth: 480,
       rootSelector: '#app',

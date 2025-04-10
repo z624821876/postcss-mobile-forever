@@ -12,7 +12,7 @@
     "node-sass": "~4.14.1",
     "postcss": "~8.4.23",
     "postcss-loader": "~5.3.0",
-    "postcss-mobile-forever": "file:../../..",
+    "hack-mobile-forever": "file:../../..",
     "sass-loader": "~8.0.2",
     "style-loader": "~2.0.0",
     "vue-loader": "^15.0.0",

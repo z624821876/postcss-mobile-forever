@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    require("postcss-mobile-forever")({
+    require("hack-mobile-forever")({
       viewportWidth: 750,
       enableMediaQuery: true,
       desktopWidth: 600,

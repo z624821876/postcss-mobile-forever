@@ -62,7 +62,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 - 📱 Browser adaptation - use viewport vw/vh units
 
-- 💻 [Desktop optimization](https://github.com/wswmsword/postcss-mobile-forever) - the mobile area
+- 💻 [Desktop optimization](https://github.com/wswmsword/hack-mobile-forever) - the mobile area
 
 - 🌓 Dark Mode Support
 
@@ -95,7 +95,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 - [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - A lightweight, extendable front-end developer tool for mobile web page
 - [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) - Vite Plugin for API mock dev server
-- [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - To adapt different displays by one mobile viewport
+- [hack-mobile-forever](https://github.com/wswmsword/hack-mobile-forever) - To adapt different displays by one mobile viewport
 - [vite-plugin-vue-devtools](https://github.com/vuejs/devtools-next) - Designed to enhance the Vue developer experience
 - [vueuse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 - [@unhead/vue](https://github.com/unjs/unhead) - manipulate document head reactively

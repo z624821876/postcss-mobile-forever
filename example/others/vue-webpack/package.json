@@ -11,7 +11,7 @@
     "html-webpack-plugin": "^5.5.1",
     "postcss": "^8.4.23",
     "postcss-loader": "^7.3.0",
-    "postcss-mobile-forever": "file:../../..",
+    "hack-mobile-forever": "file:../../..",
     "style-loader": "^3.3.3",
     "vue-loader": "^17.1.1",
     "webpack": "^5.83.1",

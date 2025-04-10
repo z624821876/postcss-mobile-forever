@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    require("postcss-mobile-forever")({
+    require("hack-mobile-forever")({
       viewportWidth: file => file.includes("node_modules/vant") ? 375 : 750,
       enableMediaQuery: true,
       desktopWidth: 600,

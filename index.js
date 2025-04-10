@@ -829,7 +829,7 @@ module.exports.postcss = true;
  * 举例：
  * ```javascript
  * const { defaultGetLocalIdent } = require("css-loader");
- * const { remakeExtractedGetLocalIdent } = require("postcss-mobile-forever");
+ * const { remakeExtractedGetLocalIdent } = require("hack-mobile-forever");
  * 
  * module.exports = {
  *   module: {
@@ -854,8 +854,8 @@ module.exports.remakeExtractedGetLocalIdent = function({ defaultGetLocalIdent, g
     const {
       resourcePath,
     } = context;
-    const aStr = __dirname.replace(process.cwd(), ''); // '/node_modules/postcss-mobile-forever'
-    const bStr = resourcePath.replace(aStr + '/.temp', ''); // remove '/node_modules/postcss-mobile-forever/.temp'
+    const aStr = __dirname.replace(process.cwd(), ''); // '/node_modules/hack-mobile-forever'
+    const bStr = resourcePath.replace(aStr + '/.temp', ''); // remove '/node_modules/hack-mobile-forever/.temp'
     const cStr = bStr.replace(/(?<=[\\/])(?:landscape|desktop|mobile|shared)\.([^\\/]*)$/, (_, file) => file); // remove 'landscape\.|desktop\.|mobile\.|shared.'
     const newContext = {
       ...context,

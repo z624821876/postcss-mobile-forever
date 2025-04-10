@@ -48,7 +48,7 @@ function vwToClampLength(number, maxDisplayWidth, minDisplayWidth, numberStr, un
 
 /** px 转为视口单位（限制最大宽度） */
 function pxToMaxViewUnit(number, maxDisplayWidth, viewportWidth, unitPrecision, viewportUnit, fontViewportUnit, prop) {
-  if (number === 0) return `0px`;
+  if (number <= 1) return `${number}px`;
   const fontProp = prop.includes("font");
   const n = round(number * 100 / viewportWidth, unitPrecision);
   const mobileUnit = fontProp ? fontViewportUnit : viewportUnit;
@@ -59,7 +59,7 @@ function pxToMaxViewUnit(number, maxDisplayWidth, viewportWidth, unitPrecision, 
 
 /** px 转为视口单位（限制最大最小宽度） */
 function pxToClampLength(number, maxDisplayWidth, minDisplayWidth, viewportWidth, unitPrecision, viewportUnit, fontViewportUnit, prop) {
-  if (number === 0) return "0px";
+  if (number <= 1) return `${number}px`;
   const fontProp = prop.includes("font");
   const n = round(number * 100 / viewportWidth, unitPrecision);
   const mobileUnit = fontProp ? fontViewportUnit : viewportUnit;
